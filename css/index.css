@@ -1,0 +1,312 @@
+html {
+	height: 100%;
+}
+
+/*---------- Page Layout ----------*/
+
+body {
+	font-family: Arial, helvetica, sans-serif;
+	text-align: center;
+	word-spacing: 1px;
+	margin: 0px;
+	background-color: rgb(151,151,149);
+}
+
+#header {
+	width: 100%; /* Spans the width of the page */
+	height: 44px; 
+	margin: 0px auto 1em; /* Ensures there is no space between sides of the screen and the menu */
+	margin-bottom: 0px;
+	z-index: 9999; /* Makes sure that your menu remains on top of other page elements */
+	position: absolute; 
+	background-color: #444;
+	text-align: center;
+	min-width: 100%
+}
+
+table {
+	width: 100%;
+	height: 44px;
+}
+table td {
+	width: 20%;
+}
+
+table td td {
+	width: 60%;
+}
+
+table td td td {
+	width: 20%;
+}
+
+#container {
+	width: 1080px;
+	margin: 0 auto;
+	padding-top: 44px;
+}
+
+#top {
+	display: block;
+	height: 320px;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+/*.image:hover { background: rgba(151,151,149,0.9); 
+	
+}*/
+
+#left {
+	display: block;
+	width: 540px;
+	height: 640px;
+	float: left;
+	background-color: yellow;
+}
+
+#rightone {
+	display: block;
+	width: 540px;
+	height: 320px;
+	float: right;
+	background-color: red;
+}
+
+#righttwo {
+	display: block;
+	width: 540px;
+	height: 320px;
+	float: right;
+	background-color: green;
+}
+
+#footer {
+	display: inline-block;
+	margin: 0 auto;
+	height: 100px;
+	text-align: center;
+	width: 100%;
+}
+
+a {							
+	padding: 0px;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	/*border-left: 1px solid black; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+	/*border-right: 1px solid black;*/ /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: white; /* Text color is white */
+	display: block;
+	height: 24px;
+	font-size: 18px;
+	display: inline;
+	vertical-align: center;
+}
+
+
+
+
+p {
+	font-family: sf-light;
+	/*font-variant: small-caps;*/
+	text-align: center;
+	word-spacing: 1px;
+	color: black;
+	font-size: 12px;
+}
+
+/*---------- Fonts ----------*/
+
+@font-face {
+	font-family: sf-light;
+	src: url('fonts/sf/SF-UI-Display-Light.otf');
+}
+
+h1 {
+	color: white;
+	font-family: sf-light;
+	font-size: 17px;
+	font-variant: small-caps;
+	text-align: center;
+	word-spacing: 1px;
+	vertical-align: center;
+	
+}
+
+h2 {
+	font-family: arial narrow;
+	text-align: center;
+	word-spacing: 1px;
+	color: #444;
+}
+
+h4 {
+	color: #5c67a0;
+	background-color: white;
+	font-size: 16pt;
+	font-weight: 100;
+}
+
+h5 {
+	color: #5c67a0;
+	font-size: 14pt;
+	font-weight: 100;
+	text-align: right;
+}
+
+h6 {
+	color: #7582b1;
+	font-size: 12pt;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+/*.navbar	{
+/*	font-family: sf-light;
+/*	height: 44px;
+/*	width: 100%;
+/*	padding: 0;
+/*	margin: 0;
+/*	position: relative; /* Ensures that the menu doesn’t affect other elements */
+/*	text-align: center;	
+/*}*/
+	
+/*.navbar li {
+/*	height: 44px;
+/*	width: 112px;  /* Each menu item is 150px wide */
+/*	float: left;  /* This lines up the menu items horizontally */
+/*	text-align: center;  /* All text is placed in the center of the box */
+/*	list-style: none;  /* Removes the default styling (bullets) for the list */
+/*	/*font: normal bold 13px/1.2em Arial narrow, Verdana, Helvetica;  */
+/*	padding-bottom: 0px;
+/*	padding-left: 0px;
+/*	padding-right: 0px;
+/*	padding-top: 0px;
+/*	margin: 0;
+/*	background-color: #444;
+/*	display: inline;
+/*	vertical-align: center;
+/*}*/
+
+
+/*
+/*.navbar li:hover, a:hover {
+/*	background-color: none;
+/*	color: gray;
+/*} 
+/*
+/*.navbar li ul {
+/*	display: none;  /* Hides the drop-down menu */
+/*	height: auto;
+/*	margin-top: 0px;
+/*	margin-left: 0px; /* Aligns drop-down box underneath the menu item */
+/*	padding: 0; /* Aligns drop-down box underneath the menu item */
+/*}				
+/*
+/*.navbar li:hover ul {
+/*	display: block; /* Displays the drop-down box when the menu item is hovered over */
+/*}
+/*
+/*.navbar li ul li {
+/*	background-color: #444
+/*} 
+/* 
+/*.navbar li ul li a {
+/* 	/*border-left: 1px solid #1f5065; 
+/* 	border-right: 1px solid #1f5065; 
+/* 	border-top: 1px solid #74a3b7;
+/* 	border-bottom: 1px solid #1f5065;*/ 
+/*	font-size: 12px;
+/*	/*width: 200px;*/
+/*	background-color: #444;
+/*	text-align: left;
+/*	horizontal-align: center;
+/*}
+/* 
+/*.navbar li ul li a:hover	{
+/*	background-color: #444*/
+/*}*/
+
+/*#footernav {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 1024px;
+	text-align: center;
+	font-size: 11px;
+}*/
+
+/*------------Popup box----------*/
+.modalDialog {
+	position: fixed;
+	font-family: sf-light;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transistion: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: rgba(151,151,149,0.9); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
