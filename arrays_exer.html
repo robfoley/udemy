@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Exercise</title>
+    <link rel="stylesheet" href="./css/index_udemy.css">
+    <script language="javascript" type="text/javascript">
+    
+        function outputArray(theArray)
+        {
+            for(var i = 0; i < theArray.length; i++)
+            {
+                document.write(theArray[i] + "<br/>");
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Arrays Exercise</h1>
+    <br/>
+    <script language="javascript" type="text/javascript">
+    
+        var placesToVisit = new Array("Seattle", "Gatlinburg", "Keywest", "Montana", "Land of Giants");
+            
+        placesToVisit.push("Boise");
+            
+        outputArray(placesToVisit);
+            
+        //placesToVisit.shift();
+        //placesToVisit.shift();
+        //
+        //document.write("<br/>");
+        //    
+        //outputArray(placesToVisit);
+        
+        document.write("<br/>")
+        
+        placesToVisit.sort();
+        
+        outputArray(placesToVisit);
+    
+    
+    </script>
+</body>
+</html>

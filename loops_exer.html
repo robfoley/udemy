@@ -14,10 +14,10 @@
     <input type="button" value="Hebrew" onclick="hebrew()">
     <input type="button" value="French" onclick="french()">-->
     
-    <input type="button" value="add" onclick="mathProb(5, 7, '+')">
-    <input type="button" value="subtract" onclick="mathProb(10, 5, '-')">
-    <input type="button" value="multiply" onclick="mathProb(5, 7, '*')">
-    <input type="button" value="divide" onclick="mathProb(10, 5, '/')">
+    <!--<input type="button" value="add" onclick="mathProb(5, 7, '+')">-->
+    <!--<input type="button" value="subtract" onclick="mathProb(10, 5, '-')">-->
+    <!--<input type="button" value="multiply" onclick="mathProb(5, 7, '*')">-->
+    <!--<input type="button" value="divide" onclick="mathProb(10, 5, '/')">-->
     
  	<script language="javascript" type="text/javascript">
         //displayGreeting();
@@ -26,6 +26,66 @@
         //document.write("<br/>");
         //var sum = addTheseNumbers(100, 17);
         //document.write(sum);
+        
+        //Standard Array
+        //var firstnames = new Array();
+        //firstnames[0] = "Mark";
+        //firstnames[1] = "Colleen";
+        //firstnames[2] = "Brett";
+        //firstnames[3] = "Joan";
+        //firstnames[4] = "Rick";
+        
+        //Condenced Array
+        //var animals = new Array("dog", "cat", "mouse", "hampster", "toad");
+        
+        //Literal Array
+        //var companies = ["Apple", "Google", "Cnet", "Udemy", "G"]
+        
+        //alert(firstnames[3]);
+        //alert(animals[0]);
+        //alert(companies[2]);
+        
+        //for(var i = 0; i < firstnames.length; i++)
+        //{
+        //    document.write(firstnames[i]);
+        //    document.write("<br/>");
+        //}
+        
+        //firstnames[0] = "Herbert";
+        //
+        //for(var i = 0; i < firstnames.length; i++)
+        //{
+        //    document.write(firstnames[i]);
+        //    document.write("<br/>");
+        //}
+        
+        var grades = [85, 92, 70, 63, 55, 92, 88, 77, 91, 91];
+        
+        document.write(grades[9]);
+        document.write("<br/>" + grades.length + "<br/>");
+        
+        grades.push(100, 63);
+        //grades.pop();
+        
+        var poppedOff = grades.pop();
+        
+        for(x in grades)
+        {
+            document.write("Iteration: " + x);
+            document.write("<br/>" + grades[x] + "<br/>")
+        }
+        
+        document.write(poppedOff);
+        
+        var names = ["phil", "Bob", "Tom", "Oscar", "Mary", "Jane"];
+        names.sort();
+        
+        for(var y = 0; y < names.length; y++)
+        {
+            document.write(names[y] + "<br/>");
+        }
+        
+        
 	</script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+html {
+	height: 100%;
+}
+
+/*---------- Page Layout ----------*/
+
+body {
+	font-family: Arial, helvetica, sans-serif;
+	text-align: left;
+	word-spacing: 1px;
+	margin: 0px;
+	background-color: rgb(151,151,149);
+}
+
+h1 {
+	color: black;
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 17px;
+	font-variant: small-caps;
+	text-align: center;
+	word-spacing: 1px;
+	vertical-align: center;	
+}
+
+

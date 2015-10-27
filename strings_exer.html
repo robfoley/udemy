@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Object Exercise</title>
+    <link rel="stylesheet" href="./css/index_udemy.css">
+    <script language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>String Object Exercise</h1>
+    <br/>
+    <script language="javascript" type="text/javascript">
+        var poem = "With Rue My Hear is Laden<br/>For Golden Friends I Had<br/>For Many a Rose-Lipped Maiden<br/>And Many a Light-Foot Lad<br/><br/>By Brooks To Broad For Leaping<br/>The Light Foot Boys are Laid<br/>The Roase-Lipped Girls are Sleeping<br/>In Fields Where Roses Fade";
+
+        document.write(poem);
+        document.write("<br/>");
+        document.write("<br/>");
+        
+        for(var i = 0; i < poem.length; i++)
+        {
+            var vowels = "a, e, i, o, u, y";
+            var letters = poem.split(poem[i]);
+            document.write(poem.replace(vowels, 'X'));
+            
+        }
+    </script>
+</body>
+</html>
